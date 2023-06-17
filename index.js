@@ -16,7 +16,7 @@ const cors = require("cors");
 
 dotenv.config();
 app.use(express.json({ limit: "50mb" }));
-app.use(cors({ origin: "https://beta.hiringneeds.in/" }));
+app.use(cors({ origin: "https://beta.hiringneeds.in" }));
 
 app.use("/images", express.static(path.join(__dirname, "/images")));
 
